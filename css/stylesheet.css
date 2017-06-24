@@ -380,13 +380,13 @@ strong {
     display: block;
     padding: 0em 0px;
     margin: 10px 15px;
-    line-height: 32px !important;
+    line-height: 41px !important;
     text-align: left;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #ddd;
     font-weight: 600;
     color: #212121;
     letter-spacing: 0.03em;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .portafolio__img--speci {
@@ -397,13 +397,13 @@ strong {
 }
 
 .portafolio__p {
-    text-align: left;
+text-align: left;
     color: #5d5d5d;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    padding: 0em 15px 10px 15px;
-    margin: 0px
+    margin: 5px 15px 15px 15px;
+    padding: 0px;
 }
 
 .footer {
