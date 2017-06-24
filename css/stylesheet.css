@@ -3,8 +3,8 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     line-height: 2.6em;
-    letter-spacing: 0.2px
-            -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.2px;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     image-rendering: optimizeQuality;
@@ -18,8 +18,8 @@ body {
 
 .margin {
     margin: 0 auto;
-    max-width: 1160px;
-    padding: 0em
+    max-width: 1080px;
+    padding: 0px;
 }
 
 .header--filter {
@@ -231,18 +231,20 @@ a {
     vertical-align: bottom;
     letter-spacing: 0.03em;
     margin-bottom: 24px;
+        text-indent: 1em;
 }
 
 .specci__title {
-    margin: 1.8em 20px 0em 20px;
+    margin: 24px 20px 0em 20px;
     /*text-align: center*/
     font-weight: lighter;
     text-transform: uppercase;
+    text-indent: 0px;
 }
 
 .conteiner {
-    display: inline-block;
-    width: 45%;
+    width: 50%;
+    float: left;
     padding: 0em;
     margin: 0px;
     vertical-align: bottom;
@@ -259,9 +261,13 @@ a {
         height: 198px !important;
         background-color: #636363;
 }
+
+.noiden {
+    text-indent: 0px
+}
 .skils {
     margin: 0px;
-    padding: 0em 24px;
+    padding: 0em 20px;
     text-align: bottom;
     display: block;
     font-size: 14px;
@@ -355,7 +361,6 @@ strong {
     vertical-align: top !important;
     float: left;
     background-color: #fff;
-    position: relative
 }
 
 .p_p {
@@ -363,11 +368,6 @@ strong {
     text-align: center;
     margin-top: 10px;
     font-size: 16px;
-}
-
-.margin {
-    padding-left: 20px;
-    padding-right: 20px
 }
 
 .portafolio__h2 {
@@ -423,6 +423,10 @@ text-align: left;
 
 .fa-github {
     font-size: 10em !important
+}
+
+.marginP {
+    margin: 0px 20px;
 }
 
 .social {
