@@ -1,6 +1,5 @@
 
 @media screen and (max-width: 800px) {
-
     .conteiner {
         float: none !important;
         width: 95% !important;
@@ -58,10 +57,33 @@
         border-radius: 1px !important;
     }
 
+
     strong {
         display: block !important;
+        line-height: 1.5em !important;
+        /*margin-bottom: 30px;*/
+    }
+
+    .about__title,.portafolio__h2 {
+        line-height: 1em !important;
     }
 }
 
 @media screen and (max-width: 390px) {
+    .p_p {
+        display: none !important;
+    }
+
+    .portafolio__article {
+            margin: 2em 2.5% !important;
+            width: 95% !important;
+    }
+
+    .hello {
+        display: none;
+    }
+
+    .menu {
+        display: none !important;
+    }
 }
