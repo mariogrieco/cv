@@ -1,69 +1,67 @@
 
 @media screen and (max-width: 800px) {
+
     .conteiner {
+        float: none !important;
+        width: 95% !important;
         display: block !important;
-        width: 100% !important;
-        margin: 5em 0em !important
+        margin: 0px !important;
+        padding: 2.5% !important;
+        text-align: left;
     }
-    .about {
-        padding: 0em 20px !important
+
+    .specci__title {
+        text-align: left !important;
+        padding: 0px !important;
+    }
+
+    .portafolio__article {
+        padding: 0.0% !important;
+        margin: 2.5% !important;
+        width: 45% !important;
+    }   
+    .a__cursos {
+        clear: both !important;
+    }
+
+    .animbox {
+        font-size: 25px !important;
+        /*line-height: 1.5em !important;*/
     }
 }
 
 @media screen and (max-width: 500px) {
-    .skils {
-        color: #333 !important;
-        margin: 2em 0em !important;
-        font-size: 1.25em !important
-    }
-    .about__title {
-        margin-right: 0px !important;
-        margin-left: 0px !important
-    }
-    .header {
-        padding: 216px 0px 135px 0px !important;
-        color: #f1f1f1 !important
+    .portafolio__article {
+        padding: 0.0% !important;
+        margin: 2.5% !important;
+        width: 90% !important;
+
     }
     .header__h1 {
-        font-size: 50px !important;
-        margin: 5px !important;
-        padding: 2px !important
+        font-size: 45px !important;
     }
+
     .animbox {
         font-size: 22px !important;
-        margin: 0px !important
+        /*line-height: 1.5em !important;*/
+    }
+    .btns {
+        line-height: 1em !important;
+        padding-top: 14px !important;
+        font-size: 26px !important;
+    }   
+
+    .btns__a {
+        padding: 10px 25px 10px !important;
+        -webkit-border-radius: 1px !important;
+        -moz-border-radius: 1px !important;
+        border-radius: 1px !important;
+    }
+
+    strong {
+        display: block !important;
     }
 }
 
 @media screen and (max-width: 390px) {
-    .about__title,
-    .about__p,
-    .about {
-        padding-left: 0px !important;
-        padding-right: 0px !important
-    }
-    .header {
-        padding: 206px 0px 125px 0px !important
-    }
-    .body {
-        font-size: 14px !important
-    }
-    .menu {
-        display: none !important
-    }
-    .header__h1 {
-        font-size: 40px !important;
-        margin: 0px !important;
-        padding: 0px !important
-    }
-    .animbox {
-        font-size: 18px !important
-    }
-    .btns__a {
-        padding: 2px 20px 2px !important;
-        font-size: 12px !important
-    }
-    strong {
-        display: block !important
-    }
 }

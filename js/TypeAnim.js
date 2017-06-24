@@ -2,7 +2,7 @@
 var wordAnime = function() {
     var a = document.getElementsByClassName("animbox_text")[0],
         b = document.getElementsByClassName("animbox_blink")[0],
-        c = ["..Arquitecto ..Front-End", "..Desarrollador ..JavaScript", "Programador", "Groot"],
+        c = ["...Arquitecto ...Front-End", "...Desarrollador ...JavaScript", "Groot"],
         d = -1,
         e = function(e) {
             var f = c[d].length,
@@ -16,4 +16,5 @@ var wordAnime = function() {
                 h = g.length - 1;
             b.textContent = "|";
             var i = setInterval(function() { a.textContent = g.slice(0, h), 1 < h ? h -= 1 : (clearInterval(i), e(f)) }, 60) } } }();
+
 wordAnime.anim();
