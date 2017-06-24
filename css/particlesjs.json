@@ -17,7 +17,7 @@
         "color": "#f5f5f5"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 4
       },
       "image": {
         "src": "img/github.svg",
