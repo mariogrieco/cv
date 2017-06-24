@@ -212,29 +212,30 @@ a {
 .about__title {
     display: block;
     margin: 0px 0px;
-    padding: 0em 0em 24px 0em;
+    padding: 0em 0em 0px 0em;
     font-size: 30px;
     color: #212121;
     font-weight: 400;
     letter-spacing: 0.03em;
+    line-height: 60px;
 }
 
 .about__p {
     text-align: left;
     margin: 0px;
-    margin-top: 24px;
+    margin-top: 12px;
     color: #5d5d5d;
     font-size: 14px;
     line-height: 24px;
     display: block;
     vertical-align: bottom;
     letter-spacing: 0.03em;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     text-indent: 1.1em;
 }
 
 .specci__title {
-    margin: 24px 0px;
+    margin: 12px 0px;
     /*text-align: center*/
     font-weight: lighter;
     text-transform: uppercase;
@@ -270,7 +271,7 @@ a {
     text-align: bottom;
     display: block;
     font-size: 14px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     font-weight: lighter;
 }
 
@@ -280,7 +281,7 @@ a {
     width: 100%;
     background-color: #e0e0e0;
     margin-top: 0em;
-    margin: 12px 0em;
+    margin: 14px 0em;
     position: relative;
     -webkit-border-radius: 0.1em;
     -moz-border-radius: 0.1em;
@@ -399,13 +400,13 @@ strong {
 }
 
 .portafolio__p {
-text-align: left;
+    text-align: left;
     color: #5d5d5d;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
     letter-spacing: 0.03em;
-    margin: 5px 15px 15px 15px;
     padding: 0px;
+    margin: 6px 15px 15px 15px;
 }
 
 .footer {
