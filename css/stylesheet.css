@@ -82,7 +82,7 @@ body {
     font-weight: 700;
     font-size: 33px;
     float: left;
-    padding-left: 20px;
+    margin-left: 2.5%;
     text-decoration: none;
     color: #fff;
     line-height: 81px
@@ -97,7 +97,7 @@ body {
     height: 80px;
     margin: 0px;
     display: inline-block;
-    padding-right: 20px
+    margin-right: 2.5%;
 }
 
 .menu__ul {
@@ -211,18 +211,17 @@ a {
 
 .about__title {
     display: block;
-    margin: 0px 24px;
+    margin: 0px 0px;
     padding: 0em 0em 24px 0em;
     font-size: 30px;
     color: #212121;
     font-weight: 400;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
 }
 
 .about__p {
     text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px;
     margin-top: 24px;
     color: #5d5d5d;
     font-size: 14px;
@@ -231,11 +230,11 @@ a {
     vertical-align: bottom;
     letter-spacing: 0.03em;
     margin-bottom: 24px;
-        text-indent: 1em;
+    text-indent: 1.1em;
 }
 
 .specci__title {
-    margin: 24px 20px 0em 20px;
+    margin: 24px 0px;
     /*text-align: center*/
     font-weight: lighter;
     text-transform: uppercase;
@@ -243,10 +242,10 @@ a {
 }
 
 .conteiner {
-    width: 50%;
+    width: 45%;
     float: left;
     padding: 0em;
-    margin: 0px;
+    margin: 2.5%;
     vertical-align: bottom;
 }
 
@@ -254,7 +253,7 @@ a {
 .portafolio__img--speci {
     width: 100%;
     display: block;
-    border-bottom: 10px solid #f3f5f7;
+    border-bottom: 5px solid #f3f5f7;
 }
 
 .ot {
@@ -267,7 +266,7 @@ a {
 }
 .skils {
     margin: 0px;
-    padding: 0em 20px;
+    padding: 0em;
     text-align: bottom;
     display: block;
     font-size: 14px;
@@ -356,9 +355,8 @@ strong {
 .portafolio__article {
     text-align: center;
     padding: 0.0%;
-    margin: 1.5%;
-    width: 30%;
-    vertical-align: top !important;
+    margin: 2.5%;
+    width: 28.33%;
     float: left;
     background-color: #fff;
 }
