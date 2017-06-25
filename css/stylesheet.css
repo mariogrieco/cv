@@ -393,7 +393,7 @@ strong {
 /*ff5f6f*/
 .portafolio__title {
     display: block;
-    margin: 15px 15px 0px 15px;
+    margin: 15px 15px 15px 15px;
     padding: 0px;
     text-indent: 0px;
     line-height: 41px !important;
@@ -418,7 +418,7 @@ strong {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.015em;
-    margin: 14px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
     padding: 0px;
 }
 
