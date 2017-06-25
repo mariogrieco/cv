@@ -26,7 +26,12 @@ function anim(object){
 
 
 $('.skils_type').on('scrollSpy:enter', function() {
-	anim(this.children[1])
+	if (!this.done) {
+		this.done = true;
+		anim(this.children[1])
+	}else{
+		
+	}
 });
 
 $('.skils_type').scrollSpy();
