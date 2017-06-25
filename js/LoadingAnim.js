@@ -1,27 +1,3 @@
-"use strict";
-
-// function loadingAnim() {
-//     var a = document.getElementsByClassName("loading");
-//     [].forEach.call(a, function(c, a) {
-//         var b = c.textContent;
-//         c.textContent = "";
-//         var d = parseInt(b),
-//             e = 0,
-//             f = setInterval(function() { 
-//             	if (e + 2 < d  ) {
-//             		e += 2;
-//             		c.style.width = e + "%";
-//             	else {
-//            	 	  c.textContent = b;
-//            	 	  clearInterval(f);
-//             	}
-
-//             }, 20 + parseInt(10 * Math.random())})
-//      }
-
-// loadingAnim();
-"use strict";
-
 function anim(object){
 
 		var text = object.textContent;
@@ -41,7 +17,6 @@ function anim(object){
             	}
 
             }, 20 + parseInt(10 * Math.random()));
-
 }
 
 
@@ -51,7 +26,3 @@ $('.skils_type').on('scrollSpy:enter', function() {
 });
 
 $('.skils_type').scrollSpy();
-
-
-
-// anim(a[0]);
