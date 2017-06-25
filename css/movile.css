@@ -78,7 +78,6 @@
         background-color: #FFF; 
         margin: 0px;
         padding: 0em;
-        /*border-bottom: 2px solid #fafafa;*/
         overflow: hidden;
         height: 0px;
     }
@@ -111,9 +110,7 @@
     .movile__menu__a { 
         color: #666;
      }
-
     .header__fixed {
-        position: fixed;
         background-color: transparent;
         color: #666;
         z-index: 10;
