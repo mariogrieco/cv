@@ -10,11 +10,11 @@ var wordAnime = function() {
                 h = 0,
                 i = "";
             b.textContent = "|";
-            var j = setInterval(function() { i += g[h].replace(".", ""), h + 1 < f ? (a.textContent = i, h++) : (b.textContent = "", a.textContent = i + ".", setTimeout(e, 2200), clearInterval(j)) }, 80) };
+            var j = setInterval(function() { i += g[h].replace(".", ""), h + 1 < f ? (a.textContent = i, h++) : (b.textContent = "", a.textContent = i + ".", setTimeout(e, 2200), clearInterval(j)) }, 85) };
     return { anim: function f() { d + 1 >= c.length ? d = 0 : d++;
             var g = a.textContent,
                 h = g.length - 1;
             b.textContent = "|";
-            var i = setInterval(function() { a.textContent = g.slice(0, h), 1 < h ? h -= 1 : (clearInterval(i), e(f)) }, 60) } } }();
+            var i = setInterval(function() { a.textContent = g.slice(0, h), 1 < h ? h -= 1 : (clearInterval(i), e(f)) }, 55) } } }();
 
 wordAnime.anim();
