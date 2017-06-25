@@ -2,7 +2,7 @@
 var wordAnime = function() {
     var a = document.getElementsByClassName("animbox_text")[0],
         b = document.getElementsByClassName("animbox_blink")[0],
-        c = ["Arquitecto ..Front-End", "Desarrollador ..JavaScript", "Groot"],
+        c = ["Arquitecto ..Front-End", "Desarrollador ..JavaScript"],
         d = -1,
         e = function(e) {
             var f = c[d].length,
