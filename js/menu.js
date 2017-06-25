@@ -30,7 +30,7 @@ $(window).scroll(function() {
         if (!scroll) {
             var item = $(".header__fixed");
     		var textos = $(".ite");
-    		var menu_mobile = $('.movile__menu');
+    		var menu_mobile = $('.mobile__menu');
 
             if (item) {
                 item.css("position", "fixed");
@@ -52,7 +52,7 @@ $(window).scroll(function() {
         if (scroll) {
             var item = $(".header__fixed");
     		var textos = $(".ite");
-    		var menu_mobile = $('.movile__menu');
+    		var menu_mobile = $('.mobile__menu');
     		
             if (item) {
                 item.css("position", "absolute");

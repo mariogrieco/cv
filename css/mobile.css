@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 390px) {
     
-    .movile__menu {
+    .mobile__menu {
         transition: 0.5s ease-in-out;
         display: block;
         text-align: center;
@@ -82,12 +82,12 @@
         height: 0px;
     }
 
-    .movile__menu__ul {
+    .mobile__menu__ul {
         padding: 0px; 
         margin: 0px 2.5%; 
     }
     
-    .movile__menu__li,.movile__menu__a {
+    .mobile__menu__li,.mobile__menu__a {
         list-style: none;
         display: inline-block;
         text-align: left;
@@ -98,7 +98,7 @@
         text-decoration: none;
     }
 
-    .movile__menu__li {
+    .mobile__menu__li {
         line-height: 44px;
         width: 100%;
         text-align: center;
@@ -107,7 +107,7 @@
         border-bottom: 1px solid #666;
     }
 
-    .movile__menu__a { 
+    .mobile__menu__a { 
         color: #666;
      }
     .header__fixed {
