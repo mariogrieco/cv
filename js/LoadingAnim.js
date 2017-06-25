@@ -1,7 +1,7 @@
 var timeCounter = 0;
 
 function anim(object){
-		timeCounter+= 40;
+		timeCounter+= 30;
 		var text = object.textContent;
         object.textContent = "";
         var porcentTo     = parseInt(text);
