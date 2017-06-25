@@ -348,7 +348,7 @@ strong {
 
 }
 
-.loading:after  {
+.peg:after {
     display: inline-block;
     width: 5px;
     content: " ";

@@ -14,8 +14,9 @@ function anim(object){
                 object.style.width = porcentFrom + "%";
               }else {
                 object.textContent = text;
+                object.className = "loading peg";
                 clearInterval(interval);
-                clearTimeout(timeO);
+                // clearTimeout(timeO);
                 timeCounter-=30;
               }
 
