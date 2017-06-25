@@ -12,8 +12,7 @@ function anim(object){
               if ( porcentFrom < porcentTo  ) {
                 porcentFrom += 2;
                 object.style.width = porcentFrom + "%";
-              }
-              else {
+              }else {
                 object.textContent = text;
                 clearInterval(interval);
                 clearTimeout(timeO);
