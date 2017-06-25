@@ -21,16 +21,18 @@ function anim(object){
             	}
 
             }, 20 + parseInt(10 * Math.random()));
-        },timeCounter);
+        }, timeCounter);
 }
 
+[].forEach.call($('.skils_type'),function(a){
+	a.done = false;
+});
 
 $('.skils_type').on('scrollSpy:enter', function() {
 	if (!this.done) {
 		this.done = true;
 		anim(this.children[1])
 	}else{
-		
 	}
 });
 
