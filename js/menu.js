@@ -43,7 +43,7 @@ $(window).scroll(function() {
             }
 
             if (textos) {
-                textos.css("color", "#666");
+                textos.css("color", "#434343");
             }
             scroll = true;
         }
