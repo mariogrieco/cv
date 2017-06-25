@@ -1,27 +1,29 @@
 var timeCounter = 0;
 
 function anim(object){
-		timeCounter+= 30  ;
-		var text = object.textContent;
+    var text = object.textContent;
         object.textContent = "";
         var porcentTo     = parseInt(text);
         var porcentFrom   = 0;
         
-        setTimeout(function(){
-        	    var interval      = setInterval(function() { 
-          	
-          	  	if ( porcentFrom + 2 < porcentTo  ) {
-            		porcentFrom += 2;
-            		object.style.width = porcentFrom + "%";
-            	}
-            	else {
-           	 	  object.textContent = text;
-           	 	  clearInterval(interval);
-           	 	  timeCounter-=30;
-            	}
+        var timeO = setTimeout(function(){
+              var interval  = setInterval(function() { 
+            
+              if ( porcentFrom < porcentTo  ) {
+                porcentFrom += 2;
+                object.style.width = porcentFrom + "%";
+              }
+              else {
+                object.textContent = text;
+                clearInterval(interval);
+                clearTimeout(timeO);
+                timeCounter-=30;
+              }
 
             }, 20 + parseInt(10 * Math.random()));
         }, timeCounter);
+		
+    timeCounter+= 30;
 }
 
 [].forEach.call($('.skils_type'),function(a){
