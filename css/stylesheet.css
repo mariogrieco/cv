@@ -10,10 +10,10 @@ body {
     image-rendering: optimizeQuality;
 }
 
+
 .movile__menu {
     display: none;
 }
-
 .clear {
     display: block;
     height: 0px;
@@ -453,7 +453,6 @@ strong {
     color: #212121;
     height: 50px
 }
-
 
 .fa-bars {
     display: none;
