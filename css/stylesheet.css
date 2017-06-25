@@ -10,10 +10,10 @@ body {
     image-rendering: optimizeQuality;
 }
 
-
 .movile__menu {
     display: none;
 }
+
 .clear {
     display: block;
     height: 0px;

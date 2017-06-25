@@ -78,7 +78,7 @@
         background-color: #FFF; 
         margin: 0px;
         padding: 0em;
-        border-bottom: 2px solid #fafafa;
+        /*border-bottom: 2px solid #fafafa;*/
         overflow: hidden;
         height: 0px;
     }
@@ -114,15 +114,14 @@
 
     .header__fixed {
         position: fixed;
-        background-color: #fff;
+        background-color: transparent;
         color: #666;
         z-index: 10;
         height: 70px;
     }
 
     .header__cv {
-        background-color: #fff;
-        color: #666;
+        color: #fff;
         line-height: 70px;
     }
 
@@ -139,6 +138,7 @@
         display: inline;
         line-height: 70px;
         float: right;
+        color: #fff;
         padding: 0px 2.5% 0px 0px;
     }
 
