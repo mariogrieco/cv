@@ -10,6 +10,20 @@ body {
     image-rendering: optimizeQuality;
 }
 
+.down {
+    position: absolute;
+    bottom: 0.2em;
+    left: 0.2em;
+    display: block;
+    color: rgba(143, 143, 143, 0.4);
+    padding: 0px;
+    z-index: 100;
+    margin: 0px;
+}
+.down:hover {
+    color: #c1c1c1;
+}
+
 .mobile__menu {
     display: none;
 }
