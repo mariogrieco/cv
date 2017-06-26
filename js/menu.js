@@ -72,3 +72,26 @@ $(window).scroll(function() {
         }
     }
 });
+
+
+/* 
+    el alto
+*/
+
+var item = document.getElementById("header");
+var alto = item.offsetHeight || item.clientHeight || 0;
+var defecto = 81;
+var restante = 0;
+var tipo =  document.documentElement.clientHeight || window.innerHeight || 0;
+    
+
+    console.log(item,alto)
+    console.log("tipo",tipo);
+
+    var mddle = (tipo-(150+81)-50)/2;
+    console.log(mddle); 
+
+    if ( mddle > 0 ) {
+
+        item.style.padding = (mddle+81)+"px 0px "+ mddle+"px 0px";
+    }
