@@ -449,8 +449,8 @@ var header = (function($,jQuery){
 		        it.style.margin = mddle+"px 0px 0px 0px";
 		    }else
 		    {
-		        item.style.padding = "281px 0px 0px 0px";
-		        it.style.margin = "200px 0px 0px 0px";
+		        item.style.padding = "181px 0px 0px 0px";
+		        it.style.margin = "100px 0px 0px 0px";
 		    }
 	}
 
