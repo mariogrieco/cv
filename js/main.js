@@ -445,11 +445,11 @@ var header = (function($,jQuery){
 		var mddle = ((tipo-81)-alto)/2;
 
 		    if ( mddle > 0 ) {
-		        item.style.padding = (mddle+81)+"px 0px "+"0px 0px";
+		        item.style.padding = (mddle+81)+"px 0px 0px 0px";
 		        it.style.margin = mddle+"px 0px 0px 0px";
 		    }else
 		    {
-		        item.style.padding = "281px";
+		        item.style.padding = "281px 0px 0px 0px";
 		        it.style.margin = "200px 0px 0px 0px";
 		    }
 	}
