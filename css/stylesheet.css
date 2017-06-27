@@ -11,15 +11,18 @@ body {
 }
 
 .down {
-    position: absolute;
-    bottom: 0.2em;
-    left: 0.2em;
     display: block;
-    color: rgba(143, 143, 143, 0.4);
-    padding: 0px;
-    z-index: 100;
+    width: 100%;
+    color: rgba(100, 100, 100, 0.25);
+    position: relative;
+    z-index: 2;
+    padding: 0em;
+    bottom: 0px;
     margin: 0px;
+    cursor: pointer;
+    position: relative;
 }
+
 .down:hover {
     color: #c1c1c1;
 }
@@ -61,7 +64,8 @@ body {
 .header__cv,
 .menu,
 .animbox,
-.btns {
+.btns ,
+.icon-menu{
     position: relative;
     z-index: 1
 }

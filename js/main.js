@@ -345,6 +345,7 @@ var menu = (function($,jQuery){
 			        if (!scroll) {
 			            var item = $(".header__fixed");
 			    		var textos = $(".ite");
+			    		var iconMenu = $(".icon-menu");
 			    		var menu_mobile = $('.mobile__menu');
 
 			            if (item) {
@@ -360,6 +361,10 @@ var menu = (function($,jQuery){
 			            if (textos) {
 			                textos.css("color", "#434343");
 			            }
+			            if (iconMenu) {
+			            	 iconMenu.css("color", "#434343");
+			            }
+
 			            scroll = true;
 			        }
 
@@ -383,6 +388,10 @@ var menu = (function($,jQuery){
 			            if (textos) {
 			                textos.css("color", "#fff");
 			            }
+
+			            if (iconMenu) {
+			            	 iconMenu.css("color", "#fff");
+			           }
 			            scroll = false;
 			        }
 			    }
@@ -414,6 +423,7 @@ var menu = (function($,jQuery){
 	return {
 		start : start,
 	}
+
 }($,jQuery));
 
 
@@ -425,6 +435,8 @@ var header = (function($,jQuery){
 
 	var set = function set(){
 		var item = document.getElementById("header");
+		var it = document.getElementById("down");
+
 		var alto = item.offsetHeight || item.clientHeight || 0;
 		var defecto = 81;
 		var restante = 0;
@@ -433,10 +445,12 @@ var header = (function($,jQuery){
 		var mddle = ((tipo-81)-alto)/2;
 
 		    if ( mddle > 0 ) {
-		        item.style.padding = (mddle+81)+"px 0px "+ (mddle)+"px 0px";
+		        item.style.padding = (mddle+81)+"px 0px "+"0px 0px";
+		        it.style.margin = mddle+"px 0px 0px 0px";
 		    }else
 		    {
-		        item.style.padding = "281px 0px 200px 0px";
+		        item.style.padding = "281px";
+		        it.style.margin = mddle+"px 0px 0px 0px";
 		    }
 	}
 
@@ -480,10 +494,5 @@ $('document').ready(function(){
 				console.log('callback - particles.js config loaded');
 			});
 		}
-
-		$( window ).resize(function() {
-		  	header.set();
-		  	console.log("re")
-		});
 })
 

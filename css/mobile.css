@@ -82,6 +82,10 @@
         height: 0px;
     }
 
+    .icon-menu:before {
+        display: inline !important;
+    }
+
     .mobile__menu__ul {
         padding: 0px; 
         margin: 0px 2.5%; 
@@ -127,18 +131,9 @@
     .p_p {
         display: none !important;
     }
-
     .portafolio__article {
             margin: 2em 2.5% !important;
             width: 95% !important;
-    }
-
-    .fa-bars {
-        display: inline;
-        line-height: 70px;
-        float: right;
-        color: #fff;
-        padding: 0px 2.5% 0px 0px;
     }
 
     .hello {
