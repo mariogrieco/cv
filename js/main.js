@@ -488,12 +488,12 @@ $('document').ready(function(){
 		skills.startSkilsEvent();
 		wordAnime.anim();
 
-	    if (!ismobile) 
-		{
-			particlesJS.load('particles-js', 'particlesjs.json', function() {
-				console.log('callback - particles.js config loaded');
-			});
-		}
+	 //    if (!ismobile) 
+		// {
+		// 	particlesJS.load('particles-js', 'particlesjs.json', function() {
+		// 		console.log('callback - particles.js config loaded');
+		// 	});
+		// }
 	// $( window ).resize(function() {
 	//   $( "#log" ).append( "<div>Handler for .resize() called.</div>" );
 	// });
