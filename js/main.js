@@ -269,34 +269,14 @@ var skills = (function($,jQuery){
 	var _delaySkils = 0;
 
 	var _AnimSkillBar = function _AnimSkillBar(object){
-			var text       = object.textContent;
-			var porcentTo  = parseInt(text);
-			var porcentFrom = 0;
+		var porcentTo  = parseInt(object.textContent)-2;
 
-			object.textContent = "";
+			setTimeout(function(){
+				object.style.width = porcentTo+"%";
+			}, _delaySkils );
 
-			var timeO = setTimeout(function(){
-
-				var interval = setInterval(function(){
-
-					if ( porcentFrom < porcentTo ) {
-						porcentFrom += 2;
-						object.style.width = porcentFrom+"%";
-					}else{
-						object.textContent = text;
-						object.className = "loading peg";
-						_delaySkils -= 30;
-						clearInterval(interval);
-						clearTimeout(timeO);
-					}
-
-			    } , 20 + parseInt(10 * Math.random()));
-
-
-			}, _delaySkils);
-
-			_delaySkils+= 30;
-	}
+			_delaySkils+= 50;
+	};
 
 
 	var _addEventSkills = function _addEventSkills(){

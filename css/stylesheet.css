@@ -352,6 +352,10 @@ strong {
 }
 
 .loading {
+    transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -moz-transition: 1s linear;
+    -o-transition: 1s linear;
     -webkit-border-radius: 0.12em 0px 0px 0.12em;
     -moz-border-radius: 0.12em 0px 0px 0.12em;
     border-radius: 0.12em 0px 0px 0.12em;
@@ -370,7 +374,7 @@ strong {
     text-align: right;
     margin: 0px;
     padding: 0px;
-
+    padding-right: 2%;
 }
 
 .peg:after {
