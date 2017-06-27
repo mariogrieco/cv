@@ -494,5 +494,8 @@ $('document').ready(function(){
 				console.log('callback - particles.js config loaded');
 			});
 		}
+	// $( window ).resize(function() {
+	//   $( "#log" ).append( "<div>Handler for .resize() called.</div>" );
+	// });
 })
 
