@@ -71,7 +71,8 @@
 .icon-circle-down:before {
   content: "\ea43";
   display: block;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.4em;
+  position: relative;
 }
 .icon-facebook2:before {
   content: "\ea91";

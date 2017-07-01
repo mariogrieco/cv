@@ -20,7 +20,6 @@ body {
     bottom: 0px;
     margin: 0px;
     cursor: pointer;
-    position: relative;
 }
 
 .down:hover {
@@ -54,7 +53,7 @@ body {
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(9, 3, 9, 0.75)
+    background-color: rgba(9, 3, 9, 0.70)
 }
 
 .social-icons {
@@ -177,10 +176,12 @@ body {
     text-align: center;
     display: block;
     line-height: 1em;
+    text-shadow: rgba(0,0,0,0.5) 1px 1px 2px;
 }
 
 .animbox {
     display: block;
+    text-shadow: rgba(0,0,0,0.5) 1px 1px 2px;
     font-weight: 300;
     font-size: 28px;
     margin: 0em;
@@ -352,10 +353,6 @@ strong {
 }
 
 .loading {
-/*    transition: 1s linear;
-    -webkit-transition: 1s linear;
-    -moz-transition: 1s linear;
-    -o-transition: 1s linear;*/
     -webkit-border-radius: 0.12em 0px 0px 0.12em;
     -moz-border-radius: 0.12em 0px 0px 0.12em;
     border-radius: 0.12em 0px 0px 0.12em;

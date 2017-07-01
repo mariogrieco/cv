@@ -330,7 +330,9 @@ var skills = (function($,jQuery){
 
 
 
-
+/*
+	mejorar.
+*/
 var menu = (function($,jQuery){
 	
 
@@ -462,22 +464,77 @@ var header = (function($,jQuery){
 
 
 var wordAnime = (function() {
-    var a = document.getElementsByClassName("animbox_text")[0],
-        b = document.getElementsByClassName("animbox_blink")[0],
-        c = ["Arquitecto ..Front-End", "Desarrollador ..JavaScript"],
-        d = -1,
-        e = function(e) {
-            var f = c[d].length,
-                g = c[d],
-                h = 0,
-                i = "";
-            b.textContent = "|";
-            var j = setInterval(function() { i += g[h].replace(".", ""), h + 1 < f ? (a.textContent = i, h++) : (b.textContent = "", a.textContent = i + ".", setTimeout(e, 2200), clearInterval(j)) }, 85) };
-    return { anim: function f() { d + 1 >= c.length ? d = 0 : d++;
-            var g = a.textContent,
-                h = g.length - 1;
-            b.textContent = "|";
-            var i = setInterval(function() { a.textContent = g.slice(0, h), 1 < h ? h -= 1 : (clearInterval(i), e(f)) }, 55) } } 
+    var box = document.getElementsByClassName("animbox_text")[0];
+    var blink = document.getElementsByClassName("animbox_blink")[0];
+	var words = [ "Desarrollador Web", "Programador JavaScript"];
+    var pos = 0;
+    var len = words.length;
+    
+
+    var deleteType = function deleteType(){
+    	var word = box.textContent;
+    	var length = word.length;
+
+    	var interval = setInterval(function(){
+    		var t;
+    		blink.textContent = "|";
+    			if ( length > 0 ) {
+    				length--;
+    				t = word.slice(0,length);
+    				box.textContent = t;
+    			}else{
+    				clearInterval(interval);
+    				if ( pos+1 < len ) {
+    					pos++;
+    					type();
+    				}else{
+    					pos = 0;
+    					type();
+    				}
+    			}
+    	}, 60 );
+
+    }
+
+    var type = function type() {
+    	var word = words[pos];
+    	var length = word.length;
+    	var slicepos = 0;
+    	box.textContent = "";
+
+    	var interval = setInterval(function(){
+    		var t;
+
+    			if ( slicepos <= length ) {
+    				t = word.slice(0,slicepos);
+    				box.textContent = t;
+    				slicepos++;
+    			}else{
+    				clearInterval(interval);
+    				blink.textContent = ".";
+    				var time2 = setTimeout(function(){
+    					 deleteType();
+    					 clearTimeout(time2);
+    				}, 2500);
+    			}
+    	}, 70);
+	}
+
+	var pause = function pause(){
+
+	}
+
+
+	var play = function play(){
+
+	}
+
+    return { 
+
+    	anim: type,
+
+    } 
+
 }());
 
 
@@ -488,14 +545,11 @@ $('document').ready(function(){
 		skills.startSkilsEvent();
 		wordAnime.anim();
 
-	 //    if (!ismobile) 
-		// {
-		// 	particlesJS.load('particles-js', 'particlesjs.json', function() {
-		// 		console.log('callback - particles.js config loaded');
-		// 	});
-		// }
-	// $( window ).resize(function() {
-	//   $( "#log" ).append( "<div>Handler for .resize() called.</div>" );
-	// });
+	    if (!ismobile) 
+		{
+			particlesJS.load('particles-js', 'particlesjs.json', function() {
+				console.log('callback - particles.js config loaded');
+			});
+		}
 })
 
