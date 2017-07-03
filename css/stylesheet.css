@@ -39,7 +39,8 @@ body {
 
 .margin {
     margin: 0 auto;
-    width: 1000px;
+        width: 100%;
+        max-width: 1000px;
     padding: 0px;
 }
 

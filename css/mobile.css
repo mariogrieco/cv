@@ -1,11 +1,4 @@
-
-@media screen and ( max-width: 1020px ){
-
-    .margin {
-        max-width: 100%;
-    }
-}
-
+/* Tablets */
 @media screen and (max-width: 800px) {
     .conteiner {
         float: none !important;
@@ -39,48 +32,8 @@
         max-width: 100%;
     }
 }
-
-@media screen and (max-width: 500px) {
-    .portafolio__article {
-        padding: 0.0% !important;
-        margin: 2.5% !important;
-        width: 90% !important;
-
-    }
-    .header__h1 {
-        font-size: 45px !important;
-    }
-
-    .animbox {
-        font-size: 22px !important;
-        /*line-height: 1.5em !important;*/
-    }
-    .btns {
-        line-height: 1em !important;
-        padding-top: 14px !important;
-        font-size: 26px !important;
-    }   
-
-    .btns__a {
-        padding: 10px 25px 10px !important;
-        -webkit-border-radius: 1px !important;
-        -moz-border-radius: 1px !important;
-        border-radius: 1px !important;
-    }
-
-
-    strong {
-        display: block !important;
-        line-height: 1.5em !important;
-        /*margin-bottom: 30px;*/
-    }
-
-    .about__title,.portafolio__h2 {
-        line-height: 1em !important;
-    }
-}
-
-@media screen and (max-width: 640px) {
+/* Mobiles */
+@media screen and (max-width: 600px) {
     
     .mobile__menu {
         transition: 0.5s ease-in-out;
@@ -153,5 +106,47 @@
 
     .menu {
         display: none;
+    }
+}
+
+/* ajuste en mobile */
+
+@media screen and ( max-width: 480px ){
+    .portafolio__article {
+        padding: 0.0% !important;
+        margin: 2.5% !important;
+        width: 90% !important;
+
+    }
+    .header__h1 {
+        font-size: 45px !important;
+    }
+
+    .animbox {
+        font-size: 22px !important;
+        /*line-height: 1.5em !important;*/
+    }
+    .btns {
+        line-height: 1em !important;
+        padding-top: 14px !important;
+        font-size: 26px !important;
+    }   
+
+    .btns__a {
+        padding: 10px 25px 10px !important;
+        -webkit-border-radius: 1px !important;
+        -moz-border-radius: 1px !important;
+        border-radius: 1px !important;
+    }
+
+
+    strong {
+        display: block !important;
+        line-height: 1.5em !important;
+        /*margin-bottom: 30px;*/
+    }
+
+    .about__title,.portafolio__h2 {
+        line-height: 1em !important;
     }
 }
