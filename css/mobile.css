@@ -1,4 +1,11 @@
 
+@media screen and ( max-width: 1020px ){
+
+    .margin {
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .conteiner {
         float: none !important;
@@ -26,6 +33,10 @@
     .animbox {
         font-size: 25px !important;
         /*line-height: 1.5em !important;*/
+    }
+
+    .margin {
+        max-width: 100%;
     }
 }
 
@@ -69,7 +80,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 640px) {
     
     .mobile__menu {
         transition: 0.5s ease-in-out;
