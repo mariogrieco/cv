@@ -116,7 +116,7 @@ body {
 
 .header {
     z-index: 1;
-    background: rgba(2, 2, 2, 0.2) url("../img/new.jpg") no-repeat center left;
+    background: rgba(2, 2, 2, 0.15) url("../img/new.jpg") no-repeat left center;
     padding: 0px;
     color: #fff;
     background-position-x: left;
@@ -128,7 +128,8 @@ body {
     left: 0;
     background-size: cover;
     text-align: center;
-    font-size: 40px
+    font-size: 40px;
+    background-attachment: fixed;
 }
 
 .header__cv {
