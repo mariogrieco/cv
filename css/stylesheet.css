@@ -15,11 +15,33 @@ body {
     width: 100%;
     color: rgba(100, 100, 100, 0.25);
     position: relative;
-    z-index: 2;
+    z-index: 2000;
     padding: 0em;
     bottom: 0px;
     margin: 0px;
     cursor: pointer;
+}
+
+#down {
+    animation-delay: 0.25s;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: up-arrow;
+    animation-fill-mode: forwards;
+    will-change: top;
+}
+
+@keyframes up-arrow {
+    from {
+        top: 0em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    to {
+        top: 0.75em;
+        color: rgba(255, 255, 255, 0);
+    }
 }
 
 .down:hover {
